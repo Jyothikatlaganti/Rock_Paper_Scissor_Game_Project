@@ -1,0 +1,112 @@
+/* universal selector - Applies to whole document */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: floralwhite;
+    color: black;
+}
+/* To center everything in game */
+.game{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+} 
+/* displaying data to user  */
+h2{
+    color: brown;
+    margin-top: 48px;
+}
+li{
+    color: c;
+}
+  
+/* Title of the game */
+.title{
+    position: absolute;
+    top: 18px;
+    font-size: 4rem;
+    z-index: 2;
+    color: chocolate;
+}
+  
+/* Score Board */
+.score{
+    display: none;
+    width: 48vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+  
+/* displaying three buttons in one line */
+.options{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+  
+/* Styling on all three buttons */
+.rock, .paper, .scissor{
+    padding: 0.8rem;
+    width: 100px;
+    border-radius: 10px;
+    background: coral;
+    outline: none;
+    border-color: green;
+    border: none;
+    cursor: pointer;
+}
+  
+.move{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -225px;
+}
+  
+/* Reload and History button style */
+.reload,.history {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: cadetblue;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: left;
+    margin-left: 20px;
+}
+.history{
+    float: right;
+}
+  /* Result Style*/
+.result{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: darkcyan;
+}
+  
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{  
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+    .options{
+        width: 100vw;
+    }
+    .reloading{
+        width: 50vw;
+    }
+}
